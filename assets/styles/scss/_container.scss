@@ -1,0 +1,678 @@
+.app__container {
+  overflow-x: hidden;
+
+  & .section-title {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: $second-color;
+    border-bottom: 2px $second-color solid;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 12px;
+      background-color: $main-color;
+      transform: translate(-50%, calc(50% + 1px));
+      animation: slideToRight linear infinite 3s;
+    }
+  }
+
+  & .banner {
+    height: 700px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 700px;
+      overflow: hidden;
+      border-radius: 0px 0px 50% 50%/0px 0px 65% 25%;
+      background-color: $main-color;
+      z-index: -1;
+    }
+
+    &__text {
+      color: white;
+      margin-top: 120px;
+
+      & h1 {
+        font-size: 4.3rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+
+        & span {
+          font-size: 1em;
+          color: $second-color;
+        }
+      }
+
+      & p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        margin-bottom: 24px;
+      }
+
+
+    }
+
+    &__icons {
+      display: flex;
+      color: white;
+      margin-bottom: 48px;
+      list-style-type: none;
+
+      & .icon {
+        font-size: 4.8rem;
+        padding: 8px;
+        margin: 12px;
+        border: 1px white solid;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: $second-color;
+        }
+      }
+    }
+
+    & .form {
+
+      &__heading {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+      }
+
+      &__content {
+        height: 46px;
+        margin-top: 8px;
+
+        & input {
+          color: black;
+          min-width: 300px;
+          height: 46px;
+          font-size: 1.6rem;
+          border-radius: 40px;
+          padding-left: 24px;
+          padding-right: 48px;
+          outline: none;
+          border: none;
+        }
+
+        & button {
+          color: white;
+          background-color: $main-color;
+          padding: 0 20px;
+          height: 46px;
+          font-size: 1.6rem;
+          border: 1px white solid;
+          border-radius: 23px;
+          position: relative;
+          left: -50px;
+          z-index: 1;
+        }
+      }
+    }
+
+    &__img {
+      margin-top: 200px;
+    }
+  }
+
+  & .about {
+
+    & .info {
+      padding: 100px 20px 100px 88px;
+
+      & h3 {
+        font-size: 3.8rem;
+        line-height: 4rem;
+      }
+
+      & p {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      & img {
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+    }
+
+    & .call {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $main-color;
+        border-radius: 100% 0% 0% 50%/100% 0% 0% 0%;
+      }
+
+      &__content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 50px;
+        color: white;
+        text-align: end;
+
+        & i {
+          font-size: 8rem;
+        }
+
+        & h3 {
+          font-size: 4.5rem;
+          margin: 32px 0;
+
+        }
+
+        & p {
+          font-size: 3rem;
+          margin: 32px 0;
+        }
+
+        & h4 {
+          color: $second-color;
+          font-size: 4rem;
+        }
+      }
+    }
+
+  }
+
+  & .services {
+    background-image: url('https://themes.jibdara.com/rec/wp-content/uploads/2021/08/service3-bg-1.png');
+    padding: 95px 0;
+
+    &__heading {
+      text-align: center;
+
+      & h3 {
+        font-size: 3.8rem;
+        line-height: 4rem;
+        margin: 10px 0;
+      }
+    }
+
+    &__list {
+      list-style-type: none;
+
+    }
+
+    &__item {
+      padding: 25px 15px;
+      text-align: center;
+      margin-top: 30px;
+      color: $main-color;
+      box-shadow: 0px 0px 10px 2px #eee;
+      background-color: white;
+      transition: 0.5s;
+
+      &:hover {
+        color: white;
+        background-color: $main-color;
+      }
+
+      & i {
+        font-size: 5rem;
+        padding: 12px;
+        border: 2px $main-color dashed;
+        border-radius: 100%;
+      }
+
+      & h4 {
+        font-size: 2.5rem;
+        margin: 16px;
+      }
+    }
+  }
+
+  & .why-we {
+    background-image: url('https://themes.jibdara.com/rec/wp-content/uploads/2021/08/why-we-3-bg.png');
+    padding: 95px 0;
+
+    &__heading {
+      text-align: center;
+
+      & h3 {
+        font-size: 3.8rem;
+        line-height: 4rem;
+        margin: 10px 0;
+      }
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      margin-top: 48px;
+    }
+
+    &__left {}
+
+    &__img {
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    &__right {
+      text-align: right;
+    }
+
+    &__item {
+      padding: 20px;
+      margin-bottom: 15px;
+      color: $main-color;
+      box-shadow: 0 0 10px 2px #eee;
+      line-height: 1.8;
+      background-color: white;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: translateY(-4px);
+
+        & h4 {
+          color: $second-color;
+        }
+      }
+
+      & i {
+        font-size: 3rem;
+        margin-bottom: 12px;
+        padding: 8px;
+        border: 2px $main-color dashed;
+        border-radius: 100%;
+      }
+
+      & h4 {
+        font-size: 2.4rem;
+        margin-bottom: 8px;
+      }
+
+      & p {
+        font-size: 1.5rem;
+        color: black;
+      }
+    }
+
+
+  }
+
+  & .statistical {
+    background-image: url('https://themes.jibdara.com/rec/wp-content/uploads/2021/08/fun-fact-3-bg.png');
+    padding: 95px 0;
+
+    &__item {
+      text-align: center;
+
+      & i {
+        font-size: 4rem;
+        padding: 20px;
+        background-color: $second-color;
+        color: white;
+        border-radius: 100%;
+      }
+
+      & p {
+        font-size: 1.8rem;
+        color: white;
+      }
+    }
+
+    &__count {
+      font-size: 4rem;
+      color: $second-color;
+      margin: 24px 0;
+      font-weight: 700;
+    }
+  }
+
+  & .second-why-we {
+    background-image: url('https://themes.jibdara.com/rec/wp-content/uploads/2021/08/service3-bg-1.png');
+    padding: 95px 0;
+
+    &__heading {
+      text-align: center;
+
+      & h3 {
+        font-size: 3.8rem;
+        line-height: 4rem;
+        margin: 10px 0;
+      }
+    }
+
+    &__list {
+      list-style-type: none;
+
+    }
+
+    &__item {
+      width: 100%;
+      height: 250px;
+      margin-bottom: 24px;
+      position: relative;
+      color: white;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+
+
+      & .text-area {
+        position: absolute;
+        bottom: 0;
+        height: 16%;
+        padding: 10px 20px;
+        background-color: #002e5bcb;
+        transition: 0.5s;
+        overflow: hidden;
+
+        & .text {
+          font-size: 1.5rem;
+          position: relative;
+
+          &__heading {
+            font-size: 2.4rem;
+            line-height: 2.4rem;
+            margin-bottom: 12px;
+          }
+
+          &__no {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-weight: 900;
+            font-size: 2.8rem;
+            font-family: sans-serif;
+            color: rgba(255, 255, 255, 0.5);
+          }
+
+          &__content {
+            display: block;
+            line-height: 2.4rem;
+            margin-bottom: 16px;
+          }
+
+          &__link {
+            display: block;
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0;
+            transition: 0.5s;
+
+            &:hover {
+              color: $second-color;
+            }
+          }
+        }
+      }
+
+      &:hover {
+
+        & .text-area {
+          height: 100%;
+          padding: 64px 20px;
+        }
+
+        & .text {
+
+          &__link {
+            font-size: 1.8rem;
+          }
+        }
+
+      }
+
+    }
+  }
+
+  & .working-process {
+    background-image: url('https://themes.envytheme.com/rec/wp-content/uploads/2021/08/working-process-bg.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 95px 0;
+    color: white;
+
+    &__heading {
+      margin-bottom: 32px;
+
+      & h3 {
+        font-size: 3.6rem;
+        line-height: 4rem;
+        margin: 10px 0;
+      }
+    }
+
+    &__list {}
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+
+      &:not(:last-child) {
+        & .icon::after {
+          content: "";
+          width: 3px;
+          height: 100%;
+          position: absolute;
+          bottom: 0;
+          left: calc(50% - 2px);
+          background-color: white;
+          transform: translateY(100%);
+          transition: background-color 0.5s;
+        }
+      }
+
+      &:hover {
+        & .icon {
+          color: $second-color;
+        }
+
+        & .icon::after {
+          background-color: $second-color;
+        }
+      }
+
+      & .icon {
+        color: $main-color;
+        background-color: white;
+        font-size: 4rem;
+        padding: 16px;
+        border-radius: 100%;
+        transition: color 0.5s;
+        margin: 16px;
+        position: relative;
+      }
+
+      & .text {
+
+        &__heading {
+          font-size: 2.4rem;
+          font-weight: 500;
+          margin-bottom: 12px;
+        }
+
+        &__content {
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+      }
+    }
+
+
+
+  }
+
+  & .testimonials {
+    padding: 95px 0;
+
+    &__img {
+      position: relative;
+
+      & img {
+        width: 100%;
+      }
+
+      & .btn-link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        & .btn-icon {
+          font-size: 4rem;
+          background-color: $second-color;
+          color: white;
+          border: 1px solid white;
+          border-radius: 50%;
+          padding: 16px 16px 16px 18px;
+          transition: 0.5s;
+
+          &:hover {
+            color: $main-color;
+            border-color: $main-color;
+            box-shadow: 0 0 20px 1px $main-color;
+          }
+        }
+      }
+
+    }
+
+    &__text {}
+
+    &__heading {
+
+      & h3 {
+        font-size: 3.5rem;
+        margin: 10px 0;
+      }
+    }
+
+    &__slides {}
+  }
+
+  & .appointment {
+    background-image: url('https://themes.envytheme.com/rec/wp-content/uploads/2021/08/bg-left-align.png');
+    background-size: 100%;
+    padding: 95px 0;
+
+    &__form {
+      background-color: $second-color;
+      border-radius: 8px;
+      padding: 30px 20px;
+      height: 100%;
+      color: white;
+    }
+
+    & .form {
+      text-align: center;
+
+      &__heading {
+        font-size: 3rem;
+        line-height: 1.8;
+      }
+
+      &__input {
+        margin: 24px 0;
+
+        &-item {
+          height: 46px;
+          background-color: $second-color;
+          border-radius: 25px;
+          border: 1px white solid;
+          outline: none;
+          margin-bottom: 20px;
+          width: 100%;
+          font-size: 1.6rem;
+          padding: 0 12px;
+          color: white;
+
+          & option {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+
+      &__button {
+        border-radius: 25px;
+        width: 100%;
+      }
+    }
+
+    &__text {
+
+      & h3 {
+        font-size: 3.8rem;
+        line-height: 4.2rem;
+        margin: 10px 0;
+      }
+
+      & p {
+        font-size: 1.6rem;
+        color: #333;
+        line-height: 1.8;
+      }
+
+      & button {
+        border-radius: 25px;
+        margin-top: 24px;
+      }
+
+      & .brands-logo {
+
+        margin-top: 24px;
+
+        & .brand__list {
+          display: flex;
+          list-style-type: none;
+          justify-content: space-between;
+        }
+      }
+    }
+
+  }
+
+  & .blogs {
+    padding: 95px;
+    text-align: center;
+
+    &__heading {
+
+      & h3 {
+        font-size: 3.6rem;
+        line-height: 4rem;
+        margin: 10px 0;
+      }
+    }
+
+    &__card {
+      width: 100%;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}

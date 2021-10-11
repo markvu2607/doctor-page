@@ -1,0 +1,94 @@
+.app__header {
+  border-bottom: 1px #ddd solid;
+
+  & .header__topbar {
+    height: 61px;
+    background-color: $main-color;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-list {
+      display: flex;
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+      padding-right: 10px;
+
+      &:not(:first-child) {
+        padding-left: 10px;
+        border-left: 1px white dashed;
+      }
+    }
+
+    &-right {
+      display: flex;
+    }
+
+    &-info {
+      display: flex;
+      margin-right: 16px;
+    }
+
+    &-icon {
+      border: 1px white solid;
+      border-radius: 50%;
+      padding: 4px;
+    }
+  }
+
+  & .header__navbar {
+    height: 83px;
+    display: flex;
+    align-items: center;
+
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.6rem;
+      align-items: center;
+    }
+
+    &-logo-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+    }
+
+    &-item {
+      cursor: pointer;
+      font-weight: 500;
+
+      &:not(:first-child) {
+        margin-left: 16px;
+      }
+
+      &--active,
+      &:hover {
+        color: $second-color;
+      }
+    }
+
+    &-button {
+      border-radius: 4px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+// Variables
+$main-color: #002e5b;
+$second-color: #41c3c0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid_full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(#{$i} * 8.3333%);
+  }
+}
+
+.my-btn {
+  background-color: $main-color;
+  padding: 12px 30px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  line-height: 27px;
+  font-size: 1.8rem;
+  transition: color 1s;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    color: $second-color;
+
+    &::before {
+      width: 100%;
+    }
+
+    &::after {
+      width: 100%;
+    }
+
+  }
+
+  &::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s ease;
+    transform: translateY(100%);
+  }
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 1s ease;
+    transform: translateY(-100%);
+  }
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+  font-weight: 700;
+}
