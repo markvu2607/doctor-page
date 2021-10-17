@@ -1,0 +1,150 @@
+.footer {
+  color: white;
+  font-size: 1.6rem;
+
+  & ::-webkit-input-placeholder {
+    /* Edge */
+    color: #6c757d;
+    font-weight: 400;
+  }
+
+  & :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #6c757d;
+    font-weight: 400;
+  }
+
+  & ::placeholder {
+    color: #6c757d;
+    font-weight: 400;
+  }
+
+  &-main {
+    background-color: $main-color;
+    padding: 95px 0;
+
+    & .newsletter,
+    & .contact-info,
+    & .departments {
+      line-height: 1.8;
+
+      & h3 {
+        font-size: 2.6rem;
+        margin-bottom: 16px;
+        font-weight: 500;
+      }
+
+      & p {
+        margin-bottom: 16px;
+      }
+
+      & ul {
+        list-style-type: none;
+
+        & li {
+          transition: 0.5s;
+          cursor: pointer;
+          margin-top: 12px;
+
+          &:hover {
+            color: $second-color;
+          }
+
+          & i {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    & .recent-posts {
+      line-height: 1.4;
+
+      & h3 {
+        font-size: 2.6rem;
+        margin-bottom: 16px;
+        font-weight: 500;
+      }
+
+      & ul {
+        list-style-type: none;
+
+        & li {
+
+          cursor: pointer;
+          margin-top: 12px;
+
+          display: flex;
+          height: 52px;
+
+          & .img {
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 12px;
+          }
+
+          & h4 {
+            transition: 0.5s;
+          }
+
+          & p {
+            margin-bottom: 0;
+            font-size: 1.4rem;
+          }
+
+          &:hover h4 {
+            color: $second-color;
+          }
+        }
+      }
+    }
+
+    & .newsletter {
+
+      & .form {
+        border: 2px solid white;
+        display: flex;
+        height: 60px;
+
+
+        & input {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          padding-left: 8px;
+          color: white;
+        }
+
+        & button {
+          flex-grow: 1;
+          border: none;
+          border-left: 1px solid white;
+          color: $main-color;
+          transition: 0.5s;
+          cursor: pointer;
+          font-size: 20px;
+
+          &:hover {
+            color: white;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    background-color: #023565;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+    padding: 12px 0;
+    border-top: 1px solid #ffffff43;
+
+    & span {
+      color: $second-color;
+      cursor: pointer;
+    }
+  }
+}
