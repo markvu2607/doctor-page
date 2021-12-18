@@ -29,10 +29,11 @@
   <link rel="stylesheet" href="./assets/styles/index.css">
 
 
+
 </head>
 
 <body>
-  <div class="app">
+  <div class="app" id="top">
     <header class="app__header">
       <div class="header__topbar">
         <div class="grid">
@@ -72,15 +73,96 @@
           <div class="header__navbar-content">
             <h2 class="header__navbar-logo-title">REC</h2>
             <ul class="header__navbar-list">
-              <li class="header__navbar-item header__navbar-item--active">Home <i class="fas fa-plus"></i></li>
-              <li class="header__navbar-item">Doctors <i class="fas fa-plus"></i></li>
-              <li class="header__navbar-item">Services <i class="fas fa-plus"></i></li>
-              <li class="header__navbar-item">Pages <i class="fas fa-plus"></i></li>
-              <li class="header__navbar-item">Shop <i class="fas fa-plus"></i></li>
-              <li class="header__navbar-item">Blog <i class="fas fa-plus"></i></li>
-              <li class="header__navbar-item">Contact Us</li>
+              <li class="header__navbar-item header__navbar-item--active">
+                <span>
+                  Home <i class="fas fa-plus"></i>
+                </span>
+                <ul class="header__navbar-list-2">
+                  <li class="header__navbar-item-2">Home 1</li>
+                  <li class="header__navbar-item-2">Home 2</li>
+                  <li class="header__navbar-item-2 header__navbar-item-2--active">Home 3</li>
+                </ul>
+              </li>
+              <li class="header__navbar-item">
+                <span>
+                  Doctors <i class="fas fa-plus"></i>
+                </span>
+                <ul class="header__navbar-list-2">
+                  <li class="header__navbar-item-2">Doctors</li>
+                  <li class="header__navbar-item-2">Doctor Details</li>
+                </ul>
+              </li>
+              <li class="header__navbar-item">
+                <span>
+                  Services <i class="fas fa-plus"></i>
+                </span>
+                <ul class="header__navbar-list-2">
+                  <li class="header__navbar-item-2">Our Services</li>
+                  <li class="header__navbar-item-2">Service Single</li>
+                </ul>
+              </li>
+              <li class="header__navbar-item">
+                <span>
+                  Pages <i class="fas fa-plus"></i>
+                </span>
+                <ul class="header__navbar-list-2">
+                  <li class="header__navbar-item-2">About Us</li>
+                  <li class="header__navbar-item-2">Testimonials</li>
+                  <li class="header__navbar-item-2">Pricing</li>
+                  <li class="header__navbar-item-2">Appointment</li>
+                  <li class="header__navbar-item-2">Time Table</li>
+                  <li class="header__navbar-item-2">Terms & Conditions</li>
+                  <li class="header__navbar-item-2">Privacy Policy</li>
+                </ul>
+              </li>
+              <li class="header__navbar-item">
+                <span>
+                  Shop <i class="fas fa-plus"></i>
+                </span>
+                <ul class="header__navbar-list-2">
+                  <li class="header__navbar-item-2">Shop</li>
+                  <li class="header__navbar-item-2">Product Details</li>
+                  <li class="header__navbar-item-2">Cart</li>
+                  <li class="header__navbar-item-2">Checkout</li>
+                  <li class="header__navbar-item-2">My Account</li>
+                </ul>
+              </li>
+              <li class="header__navbar-item">
+                <span>
+                  Blog <i class="fas fa-plus"></i>
+                </span>
+                <ul class="header__navbar-list-2">
+                  <li class="header__navbar-item-2">Blog</li>
+                  <li class="header__navbar-item-2">Blog Details</li>
+                </ul>
+              </li>
+              <li class="header__navbar-item">
+                <span>
+                  Contact Us
+                </span>
+              </li>
             </ul>
             <button class="my-btn header__navbar-button">Appointment</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__navbar-mobile">
+        <div class="grid">
+          <div class="header__navbar-mobile-content">
+            <h2 class="header__navbar-mobile-logo-title">REC</h2>
+            <div class="header__navbar-mobile-icon">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="header__navbar-mobile-list">
+              <li class="header__navbar-mobile-item">Home <i class="fas fa-plus"></i></li>
+              <li class="header__navbar-mobile-item">Doctors <i class="fas fa-plus"></i></li>
+              <li class="header__navbar-mobile-item">Services <i class="fas fa-plus"></i></li>
+              <li class="header__navbar-mobile-item">Pages <i class="fas fa-plus"></i></li>
+              <li class="header__navbar-mobile-item">Shop <i class="fas fa-plus"></i></li>
+              <li class="header__navbar-mobile-item">Blog <i class="fas fa-plus"></i></li>
+              <li class="header__navbar-mobile-item">Contact Us</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -90,7 +172,7 @@
       <section class="banner">
         <div class="grid">
           <div class="grid__row">
-            <div class="banner__text col-7">
+            <div class="banner__text col-lg-7 col-md-12 col-sm-12">
               <h1>Change Your <span>Experience</span> With Expert Dental Solution</h1>
               <p>We have been providing stability and reliability to our clients since 1859 to help them live their
                 lives
@@ -109,15 +191,15 @@
                 </div>
               </div>
             </div>
-            <img class="banner__img col-5" src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/about-3.png"
-              alt="">
+            <img class="banner__img col-lg-5 col-md-12 col-sm-12"
+              src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/about-3.png" alt="">
           </div>
         </div>
       </section>
       <section class="about">
         <div class="grid__full-width">
           <div class="grid__row">
-            <div class="info col-6">
+            <div class="info col-lg-6 col-md-12 col-sm-12">
               <h6 class="section-title">About Us</h6>
               <h3>Improving The Quality Of Your Life Through Better Health.</h3>
               <p>We will work with you to develop individualized care plans, including management of chronic diseases.
@@ -128,7 +210,7 @@
                 quality through better health.</p>
               <img src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/sign.png" alt="">
             </div>
-            <div class="call col-6">
+            <div class="call col-lg-6 col-md-12 col-sm-12">
               <div class="call__content">
                 <i class="fas fa-phone"></i>
                 <h3>Emergency Cases</h3>
@@ -146,49 +228,49 @@
             <h3>Our Medical Services</h3>
           </div>
           <ul class="services__list grid__row">
-            <li class="col-3">
+            <li class="col-lg-3 col-md-4 col-sm-6">
               <div class="services__item">
                 <i class="fas fa-heart"></i>
                 <h4>Oncology</h4>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-3 col-md-4 col-sm-6">
               <div class="services__item">
                 <i class="fas fa-heart"></i>
                 <h4>Oncology</h4>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-3 col-md-4 col-sm-6">
               <div class="services__item">
                 <i class="fas fa-heart"></i>
                 <h4>Oncology</h4>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-3 col-md-4 col-sm-6">
               <div class="services__item">
                 <i class="fas fa-heart"></i>
                 <h4>Oncology</h4>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-3 col-md-4 col-sm-6">
               <div class="services__item">
                 <i class="fas fa-heart"></i>
                 <h4>Oncology</h4>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-3 col-md-4 col-sm-6">
               <div class="services__item">
                 <i class="fas fa-heart"></i>
                 <h4>Oncology</h4>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-3 col-md-4 col-sm-6">
               <div class="services__item">
                 <i class="fas fa-heart"></i>
                 <h4>Oncology</h4>
               </div>
             </li>
-            <li class="col-3">
+            <li class="col-lg-3 col-md-4 col-sm-6">
               <div class="services__item">
                 <i class="fas fa-heart"></i>
                 <h4>Oncology</h4>
@@ -204,50 +286,68 @@
             <h3>Ensuring Health With Proper Care.</h3>
           </div>
           <div class="why-we__list grid__row">
-            <div class="why-we__left col-4">
+            <div class="why-we__left col-lg-4 col-md-12 col-sm-12">
               <div class="grid__row">
-                <div class="why-we__item col-12">
-                  <i class="fas fa-heart"></i>
-                  <h4>Ophthalmology</h4>
-                  <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live the
-                    texts.</p>
+                <div class="col-lg-12 col-md-4 col-sm-8">
+                  <div class="why-we__item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Ophthalmology</h4>
+                    <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live
+                      the
+                      texts.</p>
+                  </div>
                 </div>
-                <div class="why-we__item col-12">
-                  <i class="fas fa-heart"></i>
-                  <h4>Neurology</h4>
-                  <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live the
-                    texts.</p>
+                <div class="col-lg-12 col-md-4 col-sm-8">
+                  <div class="why-we__item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Neurology</h4>
+                    <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live
+                      the
+                      texts.</p>
+                  </div>
                 </div>
-                <div class="why-we__item col-12">
-                  <i class="fas fa-heart"></i>
-                  <h4>Urology</h4>
-                  <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live the
-                    texts.</p>
+                <div class="col-lg-12 col-md-4 col-sm-8">
+                  <div class="why-we__item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Urology</h4>
+                    <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live
+                      the
+                      texts.</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="why-we__img col-4">
+            <div class="why-we__img col-lg-4 col-md-6 col-sm-6">
               <img src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/why-we-3.png" alt="">
             </div>
-            <div class="why-we__right col-4">
+            <div class="why-we__right col-lg-4 col-md-12 col-sm-12">
               <div class="grid__row">
-                <div class="why-we__item col-12">
-                  <i class="fas fa-heart"></i>
-                  <h4>Cardiology</h4>
-                  <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live the
-                    texts.</p>
+                <div class="col-lg-12 col-md-4 col-sm-8">
+                  <div class="why-we__item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Cardiology</h4>
+                    <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live
+                      the
+                      texts.</p>
+                  </div>
                 </div>
-                <div class="why-we__item col-12">
-                  <i class="fas fa-heart"></i>
-                  <h4>Dental</h4>
-                  <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live the
-                    texts.</p>
+                <div class="col-lg-12 col-md-4 col-sm-8">
+                  <div class="why-we__item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Dental</h4>
+                    <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live
+                      the
+                      texts.</p>
+                  </div>
                 </div>
-                <div class="why-we__item col-12">
-                  <i class="fas fa-heart"></i>
-                  <h4>Gastrology</h4>
-                  <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live the
-                    texts.</p>
+                <div class="col-lg-12 col-md-4 col-sm-8">
+                  <div class="why-we__item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Gastrology</h4>
+                    <p>Behind the word mountains, far from the countries for glow Vokalia and Consonantia, there live
+                      the
+                      texts.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -257,7 +357,7 @@
       <section class="statistical">
         <div class="grid">
           <div class="grid__row">
-            <div class="statistical__item col-3">
+            <div class="statistical__item col-lg-3">
               <i class="fas fa-heart"></i>
               <div class="statistical__count">
                 <span class="odometer">0</span>
@@ -265,7 +365,7 @@
               </div>
               <p>Doctors</p>
             </div>
-            <div class="statistical__item col-3">
+            <div class="statistical__item col-lg-3">
               <i class="fas fa-heart"></i>
               <div class="statistical__count">
                 <span class="odometer">0</span>
@@ -273,7 +373,7 @@
               </div>
               <p>Projects</p>
             </div>
-            <div class="statistical__item col-3">
+            <div class="statistical__item col-lg-3">
               <i class="fas fa-heart"></i>
               <div class="statistical__count">
                 <span class="odometer">0</span>
@@ -281,7 +381,7 @@
               </div>
               <p>Happy Client</p>
             </div>
-            <div class="statistical__item col-3">
+            <div class="statistical__item col-lg-3">
               <i class="fas fa-heart"></i>
               <div class="statistical__count">
                 <span class="odometer">0</span>
@@ -299,7 +399,7 @@
             <h3>Ensuring Health With Proper Care.</h3>
           </div>
           <ul class="second-why-we__list grid__row">
-            <li class="col-4">
+            <li class="col-lg-4 col-md-6 col-sm-12">
               <div class="second-why-we__item">
                 <img src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/ww1.png" alt="">
                 <div class="text-area">
@@ -313,7 +413,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-4">
+            <li class="col-lg-4 col-md-6 col-sm-12">
               <div class="second-why-we__item">
                 <img src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/ww2.png" alt="">
                 <div class="text-area">
@@ -327,7 +427,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-4">
+            <li class="col-lg-4 col-md-6 col-sm-12">
               <div class="second-why-we__item">
                 <img src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/ww3.png" alt="">
                 <div class="text-area">
@@ -341,7 +441,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-4">
+            <li class="col-lg-4 col-md-6 col-sm-12">
               <div class="second-why-we__item">
                 <img src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/ww4.png" alt="">
                 <div class="text-area">
@@ -355,7 +455,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-4">
+            <li class="col-lg-4 col-md-6 col-sm-12">
               <div class="second-why-we__item">
                 <img src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/ww5.png" alt="">
                 <div class="text-area">
@@ -369,7 +469,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-4">
+            <li class="col-lg-4 col-md-6 col-sm-12">
               <div class="second-why-we__item">
                 <img src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/ww6.png" alt="">
                 <div class="text-area">
@@ -388,8 +488,8 @@
       </section>
       <section class="working-process">
         <div class="grid">
-          <div class="grid__row">
-            <div class="col-6">
+          <div class="grid__row working-process__content">
+            <div class="col-lg-6 col-md-9 col-sm-9">
               <div class="working-process__heading">
                 <h6 class="section-title">Caring For The Health Of You And Your Family</h6>
                 <h3>We Provide All Aspects Of Medical Practice For Your Whole Family!</h3>
@@ -424,47 +524,24 @@
           </div>
         </div>
       </section>
-      <section class="testimonials">
-        <div class="grid">
-          <div class="grid__row">
-            <div class="col-6">
-              <div class="testimonials__img">
-                <img src="https://themes.envytheme.com/rec/wp-content/uploads/2021/08/ww2.png" alt="">
-                <a class="btn-link" href="#">
-                  <i class="btn-icon fas fa-play"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="testimonials__text">
-                <div class="testimonials__heading">
-                  <h6 class="section-title">Testimonials</h6>
-                  <h3>Inspiring Stories</h3>
-                </div>
-                <div class="testimonials__slides"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="appointment">
         <div class="grid">
           <div class="grid__row">
-            <div class="col-6">
+            <div class="col-lg-6 col-md-10 col-sm-10">
               <div class="form appointment__form">
                 <h3 class="form__heading">Book An Appointment</h3>
                 <div class="form__input grid">
                   <div class="grid__row">
-                    <div class="col-6">
+                    <div class="col-lg-6">
                       <input type="text" placeholder="Name*" class="form__input-item">
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                       <input type="text" placeholder="Email*" class="form__input-item">
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                       <input type="number" placeholder="Number*" class="form__input-item">
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                       <select class="form__input-item">
                         <option selected>-- Services --</option>
                         <option>Dental Services</option>
@@ -474,11 +551,11 @@
                         <option>Urology</option>
                       </select>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                       <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
                         placeholder="Appointment Date" class="form__input-item">
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                       <input class="form__input-item" list="time" type="text" placeholder="Appointment Time">
                       <datalist id="time">
                         <option value="1:00am">
@@ -493,7 +570,7 @@
                 <button class="form__button my-btn">Make An Appointment</button>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-8 col-sm-8">
               <div class="appointment__text">
                 <h6 class="section-title">Caring For The Health Of You And Your Family</h6>
                 <h3>We Provide All Aspects Of Medical Practice!</h3>
@@ -530,7 +607,7 @@
         <div class="blogs__content">
           <div class="grid">
             <div class="grid__row">
-              <div class="col-4">
+              <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="blogs__card">
                   <div class="blogs__card-img">
                     <a href="#">
@@ -578,7 +655,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="blogs__card">
                   <div class="blogs__card-img">
                     <a href="#">
@@ -626,7 +703,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="blogs__card">
                   <div class="blogs__card-img">
                     <a href="#">
@@ -678,13 +755,19 @@
           </div>
         </div>
       </section>
+
+      <a href="#top">
+        <div class="go-top">
+          <i class="fas fa-hand-point-up"></i>
+        </div>
+      </a>
     </div>
 
     <footer class="footer">
       <div class="footer-main">
         <div class="grid">
           <div class="grid__row">
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="newsletter">
                 <h3>Newsletter</h3>
                 <p>Subscribe for all news from us. Please enter your email to form below. Subscribe for all news from
@@ -695,7 +778,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="contact-info">
                 <h3>Contact Info</h3>
                 <p>121 King St, Melbourne VIC 3000, Australia​</p>
@@ -715,7 +798,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="departments">
                 <h3>Departments</h3>
                 <ul>
@@ -728,7 +811,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="recent-posts">
                 <h3>Recent Posts</h3>
                 <ul>
@@ -771,10 +854,6 @@
     </footer>
   </div>
 </body>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-</script>
 
 <script src="./js/script.js"></script>
 
