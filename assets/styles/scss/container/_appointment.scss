@@ -1,0 +1,116 @@
+& .appointment {
+  background-image: url('https://themes.envytheme.com/rec/wp-content/uploads/2021/08/bg-left-align.png');
+  background-size: 100%;
+  padding: 95px 0;
+
+  &__form {
+    background-color: $second-color;
+    border-radius: 8px;
+    padding: 30px 20px;
+    height: 100%;
+    color: white;
+  }
+
+  & .form {
+    text-align: center;
+
+    & ::placeholder {
+      color: white;
+      opacity: 1;
+      font-weight: 700;
+    }
+
+    &__heading {
+      font-size: 3rem;
+      line-height: 1.8;
+    }
+
+    &__input {
+      margin: 24px 0;
+
+      &-item {
+        height: 46px;
+        background-color: $second-color;
+        border-radius: 25px;
+        border: 1px white solid;
+        outline: none;
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 0 12px;
+        color: white;
+
+        & option {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+
+    &__button {
+      border-radius: 25px;
+      width: 100%;
+    }
+  }
+
+  &__text {
+
+    & h3 {
+      font-size: 3.8rem;
+      line-height: 4.2rem;
+      margin: 10px 0;
+    }
+
+    & p {
+      font-size: 1.6rem;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    & button {
+      border-radius: 25px;
+      margin-top: 24px;
+    }
+
+    & .brands-logo {
+
+      margin-top: 24px;
+
+      & .brand__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: space-between;
+
+      }
+    }
+  }
+
+}
+
+// tablet and mobile
+@media screen and (max-width: 1024px) {
+  & .appointment {
+    &__text {
+      margin-top: 16px;
+      text-align: center;
+
+      & .brands-logo {
+        & .brand__list {
+          justify-content: center;
+
+          & .brand__item+.brand__item {
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// tablet
+@media screen and (min-width: 740px) and (max-width: 1024px) {}
+
+
+// mobile
+@media screen and (max-width: 740px) {}

@@ -1,0 +1,62 @@
+.app__container {
+  overflow-x: hidden;
+  margin-top: 144px;
+
+  & .section-title {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: $second-color;
+    border-bottom: 2px $second-color solid;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 12px;
+      background-color: $main-color;
+      transform: translate(-50%, calc(50% + 1px));
+      animation: slideToRight linear infinite 3s;
+    }
+  }
+
+  @import 'banner';
+  @import 'about';
+  @import 'services';
+  @import 'why-we';
+  @import 'statistical';
+  @import 'second-why-we';
+  @import 'working-process';
+  @import 'appointment';
+  @import 'blogs';
+
+  & .go-top {
+    background-color: $main-color;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 6px;
+    transition: 0.4s;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid white;
+    }
+
+    & i::before {
+      color: white;
+      font-size: 2.0rem;
+      font-weight: 900;
+    }
+  }
+}

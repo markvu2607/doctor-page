@@ -1,0 +1,28 @@
+& .statistical {
+  background-image: url('https://themes.jibdara.com/rec/wp-content/uploads/2021/08/fun-fact-3-bg.png');
+  padding: 95px 0;
+
+  &__item {
+    text-align: center;
+
+    & i {
+      font-size: 4rem;
+      padding: 20px;
+      background-color: $second-color;
+      color: white;
+      border-radius: 100%;
+    }
+
+    & p {
+      font-size: 1.8rem;
+      color: white;
+    }
+  }
+
+  &__count {
+    font-size: 4rem;
+    color: $second-color;
+    margin: 24px 0;
+    font-weight: 700;
+  }
+}

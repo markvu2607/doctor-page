@@ -1,0 +1,102 @@
+& .why-we {
+  background-image: url('https://themes.jibdara.com/rec/wp-content/uploads/2021/08/why-we-3-bg.png');
+  padding: 95px 0;
+
+  &__heading {
+    text-align: center;
+
+    & h3 {
+      font-size: 3.8rem;
+      line-height: 4rem;
+      margin: 10px 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+  }
+
+  &__left {}
+
+  &__img {
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    text-align: right;
+  }
+
+  &__item {
+    padding: 20px;
+    margin-bottom: 16px;
+    color: $main-color;
+    box-shadow: 0 0 10px 2px #eee;
+    line-height: 1.8;
+    background-color: white;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: translateY(-4px);
+
+      & h4 {
+        color: $second-color;
+        cursor: pointer;
+      }
+    }
+
+    & i {
+      font-size: 3rem;
+      margin-bottom: 12px;
+      padding: 8px;
+      border: 2px $main-color dashed;
+      border-radius: 100%;
+    }
+
+    & h4 {
+      font-size: 2.4rem;
+      margin-bottom: 8px;
+    }
+
+    & p {
+      font-size: 1.5rem;
+      color: black;
+    }
+  }
+}
+
+// tablet and mobile
+@media screen and (max-width: 1024px) {
+  & .why-we {
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      text-align: center;
+      border-radius: 16px;
+    }
+
+    &__left {}
+
+    &__img {
+      order: 3;
+    }
+
+    &__right {
+      order: 2;
+    }
+  }
+}
+
+// tablet
+@media screen and (min-width: 740px) and (max-width: 1024px) {}
+
+
+// mobile
+@media screen and (max-width: 740px) {}

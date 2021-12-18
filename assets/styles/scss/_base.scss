@@ -13,6 +13,11 @@ html {
   line-height: 1.6rem;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.app {
+  position: relative;
 }
 
 .grid {
@@ -28,12 +33,13 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-left: -12px;
   margin-right: -12px;
 }
 
 @for $i from 1 through 12 {
-  .col-#{$i} {
+  .col-lg-#{$i} {
     padding-left: 12px;
     padding-right: 12px;
     width: calc(#{$i} * 8.3333%);
@@ -54,6 +60,7 @@ html {
 
   &:hover {
     color: $second-color;
+    cursor: pointer;
 
     &::before {
       width: 100%;
@@ -87,5 +94,31 @@ html {
     right: 0;
     transition: width 1s ease;
     transform: translateY(-100%);
+  }
+}
+
+// tablet and mobile
+@media screen and (max-width: 1024px) {}
+
+// tablet
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      padding-left: 12px;
+      padding-right: 12px;
+      width: calc(#{$i} * 8.3333%);
+    }
+  }
+}
+
+
+// mobile
+@media screen and (max-width: 740px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      padding-left: 12px;
+      padding-right: 12px;
+      width: calc(#{$i} * 8.3333%);
+    }
   }
 }

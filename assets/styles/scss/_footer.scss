@@ -26,6 +26,8 @@
     & .newsletter,
     & .contact-info,
     & .departments {
+      margin-top: 24px;
+      margin-bottom: 24px;
       line-height: 1.8;
 
       & h3 {
@@ -58,6 +60,8 @@
     }
 
     & .recent-posts {
+      margin-top: 24px;
+      margin-bottom: 24px;
       line-height: 1.4;
 
       & h3 {
@@ -113,10 +117,11 @@
           outline: none;
           padding-left: 8px;
           color: white;
+          width: 70%;
         }
 
         & button {
-          flex-grow: 1;
+          width: 30%;
           border: none;
           border-left: 1px solid white;
           color: $main-color;
@@ -141,6 +146,7 @@
     line-height: 1.8;
     padding: 12px 0;
     border-top: 1px solid #ffffff43;
+    text-align: center;
 
     & span {
       color: $second-color;
@@ -148,3 +154,26 @@
     }
   }
 }
+
+// tablet and mobile
+@media screen and (max-width: 1024px) {
+  .footer {
+    &-main {
+
+      & .newsletter,
+      & .contact-info,
+      & .departments,
+      & .recent-posts {
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+    }
+  }
+}
+
+// tablet
+@media screen and (min-width: 740px) and (max-width: 1024px) {}
+
+
+// mobile
+@media screen and (max-width: 740px) {}

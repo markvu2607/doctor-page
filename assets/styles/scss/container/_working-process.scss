@@ -1,0 +1,101 @@
+& .working-process {
+  background-image: url('https://themes.envytheme.com/rec/wp-content/uploads/2021/08/working-process-bg.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 95px 0;
+  color: white;
+
+  &__content {
+    justify-content: flex-start;
+  }
+
+  &__heading {
+    margin-bottom: 32px;
+
+    & h3 {
+      font-size: 3.6rem;
+      line-height: 4rem;
+      margin: 10px 0;
+    }
+  }
+
+  &__list {}
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+
+    &:not(:last-child) {
+      & .icon::after {
+        content: "";
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 2px);
+        background-color: white;
+        transform: translateY(100%);
+        transition: background-color 0.5s;
+      }
+    }
+
+    &:hover {
+      & .icon {
+        color: $second-color;
+      }
+
+      & .icon::after {
+        background-color: $second-color;
+      }
+    }
+
+    & .icon {
+      color: $main-color;
+      background-color: white;
+      font-size: 4rem;
+      padding: 16px;
+      border-radius: 100%;
+      transition: color 0.5s;
+      margin: 16px;
+      position: relative;
+    }
+
+    & .text {
+
+      &__heading {
+        font-size: 2.4rem;
+        font-weight: 500;
+        margin-bottom: 12px;
+        line-height: 1;
+      }
+
+      &__content {
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+// tablet and mobile
+@media screen and (max-width: 1024px) {
+  & .working-process {
+    &__content {
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__item {
+      text-align: left;
+    }
+  }
+}
+
+// tablet
+@media screen and (min-width: 740px) and (max-width: 1024px) {}
+
+
+// mobile
+@media screen and (max-width: 740px) {}

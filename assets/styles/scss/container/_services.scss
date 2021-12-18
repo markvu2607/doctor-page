@@ -1,0 +1,58 @@
+& .services {
+  background-image: url('https://themes.jibdara.com/rec/wp-content/uploads/2021/08/service3-bg-1.png');
+  padding: 95px 0;
+
+  &__heading {
+    text-align: center;
+
+    & h3 {
+      font-size: 3.8rem;
+      line-height: 4rem;
+      margin: 10px 0;
+    }
+  }
+
+  &__list {
+    padding: 12px;
+    justify-content: center;
+    list-style-type: none;
+
+  }
+
+  &__item {
+    padding: 25px 15px;
+    text-align: center;
+    margin-top: 30px;
+    color: $main-color;
+    box-shadow: 0px 0px 10px 2px #eee;
+    background-color: white;
+    transition: 0.5s;
+
+    &:hover {
+      color: white;
+      background-color: $main-color;
+    }
+
+    & i {
+      font-size: 5rem;
+      padding: 12px;
+      border: 2px $main-color dashed;
+      border-radius: 100%;
+    }
+
+    & h4 {
+      font-size: 2.5rem;
+      margin: 16px;
+    }
+  }
+}
+
+// tablet and mobile
+@media screen and (max-width: 1024px) {}
+
+// tablet
+@media screen and (min-width: 740px) and (max-width: 1024px) {}
+
+
+// mobile
+@media screen and (max-width: 740px) {}
